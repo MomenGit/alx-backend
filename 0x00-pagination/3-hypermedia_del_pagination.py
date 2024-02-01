@@ -39,7 +39,7 @@ class Server:
             }
         return self.__indexed_dataset
 
-    def get_hyper_index(self, index: int = None,
+    def get_hyper_index(self, index: int | None = None,
                         page_size: int = 10) -> Dict:
         """return a dictionary with the following key-value pairs:
             index: the current start index of the return page.
