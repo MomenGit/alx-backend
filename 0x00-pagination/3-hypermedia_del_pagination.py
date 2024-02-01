@@ -39,7 +39,8 @@ class Server:
             }
         return self.__indexed_dataset
 
-    def get_hyper_index(self, index: int | None = None, page_size: int = 10) -> Dict:
+    def get_hyper_index(self, index: int | None = None,
+                        page_size: int = 10) -> Dict:
         index_data = self.indexed_dataset()
 
         if index is None or index >= len(self.dataset()):
@@ -61,4 +62,6 @@ class Server:
             else:
                 total += 1
             i += 1
-        return {"index": index, "next_index": next_index, "page_size": len(data), "data": data}
+        return {"index": index,
+                "next_index": next_index,
+                "page_size": len(data), "data": data}
