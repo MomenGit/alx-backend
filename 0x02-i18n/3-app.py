@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Basic Flask app"""
 
-from flask_babel import Babel, gettext
+from flask_babel import Babel, _
 from flask import Flask, render_template, request
 
 
@@ -32,9 +32,7 @@ def welcome():
     Outputs “Welcome to Holberton” as page title (<title>)
     and “Hello world” as header (<h1>)
     """
-    return render_template('3-index.html',
-                           title=gettext('home_title'),
-                           header=gettext('home_header'))
+    return render_template('3-index.html')
 
 
 if __name__ == '__main__':
