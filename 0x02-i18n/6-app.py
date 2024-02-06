@@ -67,7 +67,7 @@ def index():
     Outputs “Welcome to Holberton” as page title (<title>)
     and “Hello world” as header (<h1>)
     """
-    return render_template('5-index.html', user=g.user)
+    return render_template('6-index.html', user=g.user)
 
 
 if __name__ == '__main__':
