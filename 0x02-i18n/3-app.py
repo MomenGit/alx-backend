@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Basic Flask app"""
 
-from flask_babel import Babel, _
+from flask_babel import Babel
 from flask import Flask, render_template, request
 
 
@@ -27,7 +27,7 @@ def get_locale():
 
 
 @app.route("/")
-def welcome():
+def index():
     """
     Outputs “Welcome to Holberton” as page title (<title>)
     and “Hello world” as header (<h1>)
